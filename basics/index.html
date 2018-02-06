@@ -10,44 +10,71 @@
     </head>
 
     <body>
+        <!-- Start Wrapper Div -->
         <div>
+            <!-- this is all of the header -->
             <header>
                 <nav>
+                    <h1>Swayloggo</h1>
                     <ul>
-                        <li><a href="#">Who you</a></li>
-                        <li><a href="#">Throwin $</a></li>
-                        <li><a href="#">Aesthetics</a></li>
-                        <li><a href="#">Makin Bacon</a></li>
-                        <li><a href="#">Peep action</a></li>
+                        <li><a href="#">In dex</a></li>
+                        <li><a href="#allyou">Who you</a></li>
+                        <li><a href="#about">About Sway</a></li>
+                        <li><a href="#articles">Swayloggo bloggo</a></li>
+                        <li><a href="#others">Makin Bacon</a></li>
+                        <li><a href="#contacts">Peep action</a></li>
                     </ul>
                 </nav>
             </header>
-
-            <div>
-                <h1>Swayloggo</h1>
+            <!-- End of header -->
+            <!-- Really pointless about section -->
+            <div id="allyou">
+                <figure>
+                    <img src="image/featured.jpg" alt="featured post logo of yelling man face">
+                    <figcaption>RAGE QUIT!</figcaption>
+                </figure>
+                <h3>Who you? who knew?</h3>
                 <p>sway side to side out the views</p>
-                <p>get the knowledge to hook top10</p>
+                <p>get the <em>knowledge</em> to hook top10</p>
                 <p>write the knowledge on top1</p>
+                <pre>
+                  &lt;div&gt;
+                    get knowledge...
+                    &lt;p&gt;nest the knowledge&lt;/p&gt;
+                  &lt;/div&gt;
+                </pre>
             </div>
-
+            <!-- End of pointless about section -->
             <main>
+                <!-- Beginning of the main bulk of the page -->
+                <!-- Beginning of the about section-->
+                <section id="about">
+                    <h2>How about the sway</h2>
+                    <p><span>Bring the sway to your game - get out the way. Be the cream - follow our systems to the dream</span></p>
+                    <figure>
+                        <img src="image/iRacing-Ferrari-488-GTE.jpg" alt="iRacing Ferrari 488 race car">
+                        <figcaption>Gamers can now go racing in immersive VR</figcaption>
+                    </figure>
+                </section>
+                <!-- End of the about section -->
 
-                <section>
+                <!-- Beginning of the blog articles -->
+                <section id="articles">
                     <h2>Swayloggo bloggo</h2>
 
                     <article>
                         <header>
-                            <h3>Gettin' CS sway on - CS:GO</h3>
+                            <h3>Gettin' CS sway on - <strong>CS:GO</strong></h3>
                             <p>By: Monken</p>
                         </header>
                         <p>We talkin about getting your Counter Strike Sway on.</p>
-                        <a href="article.html">Scoop it</a>
+                        <a href="articles/2018/cs_go_swayarticle.html#sway_cs">Scoop it</a>
                         <footer>Published: Feburary 6, 2018</footer>
                     </article>
 
                     <article>
                         <header>
-                            <h3>Gettin' PUBG sway on - PUBG</h3>
+                            <h3>Gettin' PUBG sway on - <strong>PUBG</strong></h3>
                             <p>By: Monken</p>
                         </header>
                         <p>Gotta keep movin to the groovin.</p>
@@ -57,7 +84,7 @@
 
                     <article>
                         <header>
-                            <h3>There's no swayin in iRacing - iR</h3>
+                            <h3>There's no swayin in iRacing - <strong>iR</strong></h3>
                             <p>By: Duck Hunt</p>
                         </header>
                         <p>Gas, gas. Brake, brake. Don't Sway.</p>
@@ -67,20 +94,10 @@
                     </article>
 
                 </section>
+                <!-- End of the blog articles -->
 
-                <section>
-                    <h2>Get at us</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="#">sway home</a></li>
-                            <li><a href="#">frag about</a></li>
-                            <li><a href="#">swag articles</a></li>
-                            <li><a href="#">lag contact</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section>
+                <!-- Beginning of faux links to games & a block quote-->
+                <section id="others">
                     <aside>
                         <h3>This is the stuff - go play it</h3>
                         <ol>
@@ -89,6 +106,9 @@
                             <li><a href="#">Steam (y)</a></li>
                             <li><a href="#">Drive and crash everything</a></li>
                         </ol>
+
+                        <hr>
+
                         <blockquote cite="https://www.reddit.com/r/GlobalOffensive/comments/2lob84/n0thing_were_trying_to_get_as_much_practise_as_we/">
                             "If we win more rounds than we lose, we win the game" -
                             <footer>
@@ -101,17 +121,31 @@
                         </blockquote>
                     </aside>
                 </section>
+                <!-- End of faux links-->
 
-                <section>
+
+                <!-- Beginning of contact area -->
+                <section id="contacts">
                     <h2>contact</h2>
-                    <p>sayhey@swayloggo.com</p>
+                    <p><strong>Email:</strong><br><a href="mailto:sayhey@swayloggo.com?subject=Say%20Hey">sayhey@swayloggo.com</a></p>
+                    <p><strong>Phone:</strong><br>503-503-5030</p>
+                    <p><strong>Address:</strong><br>
+                        <address>
+                        Swayloggo Inc.<br>
+                        55 SW Naito Parkway Ste 9000<br>
+                        Portland, OR 97204
+                        </address>
+                    </p>
                 </section>
-
             </main>
+            <!-- End of main section-->
 
+            <!-- Beginning of footer-->
             <footer>
-                <p>&copy;2018 The bloggo aka Swayloggo</p>
+                <p><small>&copy;2018 The bloggo aka Swayloggo</small></p>
             </footer>
+            <!-- End of footer -->
         </div>
+        <!-- End Wrapper Div-->
     </body>
 </html>
