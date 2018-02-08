@@ -60,6 +60,7 @@ a {
 .main-nav a {
     padding: 10px 15px;
     display: block;
+    text-align: center;
 }
 
 /* ---- Layout Containers ---- */
@@ -74,13 +75,12 @@ a {
     padding-bottom: 1.5em;
 	background: #3acec2;
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .main-footer {
+	text-align: center;
 	padding: 2em 0;
 	background: #d9e4ea;
-    text-align: center;
 }
 
 
@@ -93,31 +93,48 @@ a {
 
 @media (min-width: 769px) {
     .container {
-        width: 80%;
+        width: 85%;
         max-width: 1150px;
         margin: 0 auto;
     }
     .wrap {
         min-height: calc(100vh - 89px);
     }
-    .name,
+    .feat-img {
+        width: 300px;
+        float: left;
+        margin: 5px 25px 25px 0;
+        padding: 10px;
+        border: solid 1px #d9e4ea;
+    }
+    .main-nav {
+        float: right;
+    }
+
     .main-nav li {
-        display: inline-block;
+        float: left;
+        margin-left: 12px;
     }
 
     .name {
-        width: 240px;
+        float: left;
     }
 
-    .main-nav li {
-        margin-right: 12px;
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
     }
+
     .col {
-        display: inline-block;
-        width: 50%;
-        margin-right: -5px;
-        vertical-align: top;
+        float: left;
         padding-left: 1em;
         padding-right: 1em;
+    }
+    .primary {
+        width: 40%;
+    }
+    .secondary {
+        width: 60%;
     }
 }
