@@ -1,0 +1,37 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #616161;
+    padding: 40px 0;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    width: 50%;
+    margin: auto;
+}
+li {
+    border-bottom: 1px dotted #40918c;
+    padding: 15px 10px;
+}
+
+/* Structural Pseudo-classes------------------ */
+
+li:first-child {
+    background: #52bab3;
+    color: white;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+span:only-child{
+    color: #52bab3;
+    font-size: 1.5em;
+}
+
+li:empty {
+    background: tomato;
+}
