@@ -1,0 +1,89 @@
+/* Base Styles -------------------------------- */
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #384047;
+	padding: 10px 0 80px;
+}
+div {
+	width: 52%;
+	margin: auto;
+}
+h1 {
+	margin-bottom: 36px;
+}
+p {
+	margin-bottom: 24px;
+  font-weight: 200;
+}
+ul {
+	font-size: 1.25rem;
+	list-style: none;
+	margin-top: 36px;
+	padding: 0;
+}
+li {
+	margin-bottom: 16px;
+}
+a {
+	color: #4183c4;
+}
+
+/* Substring Matching Attribute Selectors ---- */
+
+a[href^="http:"] {
+  color: #52bab3;
+  text-decoration: none;
+}
+
+/* Psuedo Elements ---------------------------- */
+
+.intro::first-line {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.intro::first-letter {
+    color: red;
+    float: left;
+    font-size: 80px;
+    background: #384047;
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+.jpg::before {
+    content: url(../img/icn-picture.svg);
+    font-size: 8px;
+}
+
+.zip::before {
+    content: url(../img/icn-zip.svg);
+    font-size: 8px;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: coral;
+    margin: 0 10px;
+}
+
+.d-loads a::after {
+    content: attr(title);
+    display: inline-block;
+    color: initial;
+    font-size: .65em;
+    margin-left: 5px;
+}
+
+.d-loads a {
+    border: solid 1px;
+}

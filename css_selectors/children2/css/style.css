@@ -1,0 +1,22 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #616161;
+    padding: 40px 0;
+}
+section {
+    margin: auto;
+    width: 50%;
+}
+div {
+    border-bottom: 1px dotted;
+    padding: 18px 10px;
+    color: #777;
+
+}
+
+/* Structural Pseudo-classes------------------ */
+
+div:nth-last-of-type(1) {
+  background: #52bab3;
+  color: white;
+}
